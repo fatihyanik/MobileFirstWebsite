@@ -16,6 +16,14 @@
     padding: 1rem;
 }
 
+.bg-white{
+    background: #fff !important;
+}
+
+.bg-secondary{
+    background: var(--greyColor) !important;
+}
+
 img{
     width: 100%;
     height: auto;
@@ -83,14 +91,17 @@ nav{
     right: -3px;
 }
 
+.hero-bg{
+    background-image: url(./2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .hero{
     margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     height: 35vh;
-    background-image: url(./2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .hero-content{
@@ -211,3 +222,265 @@ nav{
     font-weight: bold;
     color: #505050;
 }
+
+.training,
+.features-section{
+    padding-bottom:1.5rem;
+}
+
+.training-articles{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:1.3rem;
+}
+
+.training-article{
+    background:#fff;
+    border-radius: 7px;
+}
+
+.train-article-img{
+    height: 230px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.train-article-info{
+    padding: 1rem;
+}
+
+.train-article-info h5{
+    font-size: .9rem;
+    color: #505050;
+    margin-bottom: .3rem;
+}
+
+.train-article-info p{
+    font-size: .85rem;
+    color: #555;
+    line-height: 1.3rem;
+    margin-bottom: .7rem;
+}
+
+.train-article-info a{
+    text-decoration: underline;
+}
+
+.mobile-contact-section{
+    padding-bottom:.5rem;
+}
+
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:.5rem 1rem;
+}
+
+.feature{
+    display: flex;
+    border: 1px solid #ebebeb;
+    padding: .5rem;
+}
+
+.feature-icon{
+    font-size: 1.8rem;
+    margin-right: .8rem;
+    color: var(--mainColor);
+}
+
+.feature-info{
+    flex: 1;
+}
+
+.feature-info h5{
+    font-size: .9rem;
+    color: #333;
+}
+
+.feature-info p{
+    font-size: .85rem;
+    color: #505050;
+}
+
+.mobile-contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin:.8rem 0rem;
+}
+
+.mobile-contact > div > span{
+    font-size: 0.9rem;
+}
+
+.mobile-social-links span{
+    font-size: 1.3rem;
+    margin: 0rem .5rem;
+    color: var(--mainColor);
+}
+
+.footer-bottom{
+    padding: 1rem 0rem 2rem 0rem;
+    text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+    .wrapper.full-screen{
+        padding: 0rem;
+    }
+    header{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .sub-nav{
+        display: block;
+    }
+
+    .sub-nav-top{
+        background:#272727;
+    }
+
+    .sub-nav-top ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sub-nav-top li{
+        margin: 0rem 1rem;
+    }
+
+    .sub-nav-top a{
+        color: #fff;
+    }
+
+    .sub-nav-bottom-links{
+        text-align: center;
+    }
+
+    .sub-nav-bottom-links a{
+        display: inline-block;
+        color: #505050 !important;
+        margin: 0rem 1rem;
+    }
+
+    .hero{
+        margin: 0 !important;
+    }
+
+    .product-grid{
+        grid-template-columns: repeat(3,1fr);
+        padding: 1rem;
+    }
+
+    .product{
+        margin-bottom: 1.3rem;
+    }
+
+    .is-mobile-menu,
+    .mobile-menu{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:960px){
+    .hero{
+        grid-template-columns: repeat(2,1fr);
+        height: 50vh;
+    }
+
+    .hero-content{
+        max-height: 60vh;
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .hero-content h4{
+        font-size: 3rem;
+    }
+
+    .hero-content p{
+        font-size: 1.9rem;
+    }
+
+    .hero-image{
+        display: inline-block;
+        position: relative;
+    }
+
+    .hero-image img{
+        position: absolute;
+        bottom: 0;
+        width: 65%;
+    }
+
+    .hero-action-btn a:first-child{
+        margin-left: 0rem;
+    }
+
+    .hero-action-btn a{
+        font-size: 1.3rem;
+    }
+
+    .training-articles, .features{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .train-article-img{
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .section-info h3{
+        font-size: 2rem;
+    }
+
+    .section-info p{
+        font-size: 1.2rem;
+    }
+
+    .feature{
+        margin-bottom: 1.3rem;
+        padding: 1.3rem;
+    }
+
+    .training,
+    .features-section,
+    .mobile-contact-section{
+        padding: 2rem 0rem;
+    }
+
+    .mobile-contact{
+        justify-content: center;
+        margin-bottom: 1.2rem;
+    }
+
+    .mobile-contact > div{
+        margin: 0rem 1rem;
+    }
+}
+
+@media only screen and (min-width:1124px){
+    .wrapper{
+        width: 70%;
+        margin: auto;
+    }
+
+    .wrapper.full-screen{
+        width: 100%;
+    }
+
+    .hero{
+        width: 70%;
+        margin: auto;
+    }
+
+    .product-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
